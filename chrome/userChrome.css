@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #39C5BB;
+    --primary-color-light: #39C5BBAB;
+    --arrowpanel-border-color: var(--primary-color-light) !important;
+    --toolbar-field-border-color: var(--primary-color-light) !important;
+}
+
+/* 弹出菜单和面板美化 */
+menupopup,
+panel {
+    --panel-border-radius: 6px !important;
+    --panel-border-color: var(--primary-color-light) !important;
+    --panel-separator-color: var(--primary-color) !important;
+    --menu-separator-color: var(--primary-color) !important;
+}
+
+/* 按钮图标颜色 */
+.toolbarbutton-icon,
+#stop-button {
+    fill: var(--primary-color);
+}
+
+/* 标题栏按钮背景色 */
+.titlebar-buttonbox {
+    background-color: var(--primary-color-light);
+}
+
+/* 地址栏背景及透明度 */
+#urlbar-background {
+    --toolbarbutton-border-radius: 6px;
+    opacity: 0.4;
+}
+
+/* 地址栏展开样式 */
+#urlbar[breakout][breakout-extend][open] {
+    border-radius: 6px;
+    background: url(urlbar-bg.avif) center/cover;
+}
+
+/* 未聚焦时居中输入文字 */
+#urlbar:not([focused]) .urlbar-input {
+    text-align: center !important;
+}
